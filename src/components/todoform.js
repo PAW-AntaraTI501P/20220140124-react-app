@@ -1,6 +1,5 @@
-// src/components/TodoForm.js
-
-import React, { useState } from "react";
+import { useState } from "react";
+import "../App.css"
 
 const TodoForm = ({ onAddTodo }) => {
   const [newTask, setNewTask] = useState("");
@@ -34,18 +33,19 @@ const TodoForm = ({ onAddTodo }) => {
         <input
           type="text"
           name="task"
+          className="form-input"
           placeholder="Tambahkan tugas baru..."
           value={newTask}
           onChange={handleInputChange}
           required
-          style={{ padding: "8px", borderRadius: "4px", border: "none" }}
+          style={{ padding: "8px", borderRadius: "4px", border: "none", backgroundColor: "#FFEAEA"}}
         />
         <button
           type="submit"
           style={{
             padding: "10px",
-            backgroundColor: "#61dafb",
-            color: "#282c34",
+            backgroundColor: "#9B177E",
+            color: "#ffffff",
             border: "none",
             borderRadius: "4px",
             cursor: "pointer",
